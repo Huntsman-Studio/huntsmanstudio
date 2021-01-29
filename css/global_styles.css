@@ -1,0 +1,146 @@
+/* H1 */
+h1{
+    font-size: 134px;
+}
+
+/* H2 */
+h2{
+    font-size: 100px;
+}
+
+/* H3 */
+h3{
+    font-size: 75px;
+}
+
+/* H4 */
+h4{
+    font-size: 56px;
+}
+
+/* H5 */
+h5{
+    font-size: 42px;
+}
+
+/* H6 */
+h6{
+    font-size: 31px;
+}
+
+/* Body 1*/
+p.mega{
+    font-size: 24px;
+}
+
+/* Body 2 */
+p.small{
+    font-size: 18px;
+}
+
+/* Subtitle 1 */
+p.sub{
+    font-size: 20px;
+}
+
+/* Subtitle 2 */
+p.sub2{
+    font-size: 26px;
+}
+
+/* Caption */
+p.caption{
+    font-size: 21px;
+}
+
+/* Overline */
+p.overline{
+    font-size: 18px;
+}
+
+/** COLORS **/
+
+/* Primary color */
+*#primary{
+    color: #4E008E;
+}
+
+/* Secondary color */
+*#secondary{
+    color: #A73BFF;
+}
+
+/* Violet color */
+*#violet{
+    color: #CE9CFF;
+}
+
+/* Error color */
+*#error{
+    color: #FF3B70;
+}
+
+/* Eggplant Color */
+*#eggplant{
+    color: #2E005B;
+}
+
+/* White Color */
+*#white{
+    color: #F3F3F3;
+}
+
+/* Black Color */
+*#black{
+    color: #050505;
+}
+
+/* Gray Color */
+*#gray{
+    color: #3d3d3d;
+}
+
+/** BUTTONS **/
+
+/* Buttons */
+button{
+    font-size: 29px;
+    border-radius: 99px;
+}
+
+/* PRIMARY */
+/* Default */
+button.primary{
+    color:  #4E008E;
+    background-color: #F3F3F3;
+}
+/* hover */
+button.primary:hover{
+    color:  #F3F3F3;
+    background-color: #A73BFF;
+}
+/* focus */
+button.primary:focus{
+    color: #A73BFF;
+    background-color: #4E008E;
+}
+/***/
+
+/* SECONDARY */
+/* Default */
+button.secondary{
+    background-color: transparent;
+    color: #F3F3F3;
+    border: 1px solid #F3F3F3;
+}
+/* hover */
+button.secondary:hover{
+    color:  #F3F3F3;
+    background-color: #A73BFF;
+}
+/* focus */
+button.secondary:focus{
+    color: #A73BFF;
+    background-color: #4E008E;
+}
+/***/
