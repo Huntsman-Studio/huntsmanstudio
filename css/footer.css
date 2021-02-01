@@ -4,3 +4,10 @@ div.footer{
     height: 397px;
     background-color: #4E008E; /* Primary Color */
 }
+/***/
+
+/** IMG **/
+img#ft-logo{
+    width: 30px;
+}
+/***/
