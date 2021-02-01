@@ -1,5 +1,5 @@
 <?php
-
+    // Header Functionality
     function get_header(){
         
         // Open TAG
