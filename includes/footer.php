@@ -24,8 +24,11 @@
             <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>';
 
+        // Get current year
+        $_year = date('Y');
+        
         // Copyright
-        $footer .= '<p class="small copyright" id="secondary">© 2020 Huntsman Studio | Privacy Notice</p>';
+        $footer .= '<p class="small copyright" id="secondary">© '.$_year.' Huntsman Studio | Privacy Notice</p>';
         // Close Div
         $footer .= '</div>';
 
