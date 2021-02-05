@@ -13,7 +13,10 @@
 
         // Styles
         $header .= '<link rel=\'stylesheet\' href=\'./css/global_styles.css\'>';
-        $header .= '<link rel=\'stylesheet\' href=\'./css/styles.css\'>';
+        $header .= '<link rel=\'stylesheet\' href=\'./css/footer.css\'>';
+
+        // Favicon
+        $header .= '<link rel="icon" type="image/png" href="./images/A2.png">';
 
         // Scripts
         $header .= '';
