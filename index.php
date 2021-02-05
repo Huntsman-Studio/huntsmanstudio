@@ -13,6 +13,7 @@
         get_header();
     ?>
     <body>
+        <main>
         <?php
             // Pages Functionality
             if( ! isset($_REQUEST['p'])) {
@@ -20,7 +21,7 @@
             }
             $p = $_REQUEST['p'];
 
-            $pages = array('home');
+            $pages = array('home', 'contact');
 
             $ok=false;
             foreach($pages as $pp) {
@@ -34,6 +35,7 @@
             }
 
         ?>
+        </main>
         <?php
             // Footer
             get_footer();
