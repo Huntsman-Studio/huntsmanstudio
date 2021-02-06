@@ -17,7 +17,7 @@
 
         // Social icons
         $footer .= '<ul id="ft-social">
-            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.facebook.com/Huntsmanstudiogr" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://instagram.com/huntsmanstudiogr/" target="_blank"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#" target="_blank"><i class="fab fa-behance"></i></a></li>
             <li><a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
