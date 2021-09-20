@@ -1,0 +1,22 @@
+// Section
+section{
+  background-color: #F3F3F3;
+
+  // Article
+  article {
+    background-color: #4E008E;
+
+    // Logo
+    svg.logo {
+      width: 14rem;
+    }
+
+    // Toglemenu
+    div.toglemenu {
+      background-color: #A73BFF;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+}
