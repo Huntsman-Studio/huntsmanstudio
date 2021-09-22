@@ -1,4 +1,6 @@
-<section class="flex justify-center">
+<section class="flex justify-center"
+  *ngIf="!_router.url.includes('nav')"
+>
   <article class="w-full max-w-sm max-h-36">
     <div class="grid justify-items-center pt-9">
       <svg
@@ -27,7 +29,7 @@
       </svg>
     </div>
     <div class="grid justify-items-end">
-      <div class="toglemenu flex justify-center items-center">
+      <div class="toglemenu flex justify-center items-center" routerLink="/nav">
         <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
           <defs><style>.a,.b{fill:none;}.b{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs>
           <path class="a" d="M0,0H32V32H0Z"/>
