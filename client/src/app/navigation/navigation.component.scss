@@ -1,0 +1,29 @@
+// Section
+section{
+  background-color: #4E008E;
+
+  // Li
+  li{
+    color: #f8f8f8;
+  }
+
+  // Image Menu
+  div.menu-image{
+    width: 1640px;
+    height: 559px;
+    background-image: url('../../assets/img/huntsman-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+
+    // H1
+    h1{
+      color: #f8f8f8;
+    }
+
+    // P
+    p{
+      color: #f8f8f8;
+    }
+  }
+}
