@@ -11,6 +11,13 @@ section{
       width: 14rem;
     }
 
+    svg.logo:hover{
+      cursor: pointer;
+    }
+    svg.logo:focus{
+      outline: none;
+    }
+
     // Toglemenu
     div.toglemenu {
       background-color: #A73BFF;
