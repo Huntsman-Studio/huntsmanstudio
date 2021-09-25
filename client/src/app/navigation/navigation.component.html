@@ -2,9 +2,9 @@
   <nav class="flex justify-center pt-9">
     <ul class="flex justify-center">
       <li class="mr-14 font-bold text-7xl" routerLink="/main">home</li>
-      <li class="mr-14 font-bold text-7xl" routerLink='work' >work</li>
-      <li class="mr-14 font-bold text-7xl" routerLink='about'>about</li>
-      <li class="mr-14 font-bold text-7xl" routerLink='contact'>contact</li>
+      <li class="mr-14 font-bold text-7xl" routerLink='/work' >work</li>
+      <li class="mr-14 font-bold text-7xl" routerLink='/about'>about</li>
+      <li class="mr-14 font-bold text-7xl" routerLink='/contact'>contact</li>
     </ul>
   </nav>
   <article class="pt-32 flex items-center xl:pl-36">
@@ -12,5 +12,18 @@
       <h1 class="font-bold text-9xl">Make some noise...</h1>
       <p class="font-normal text-2xl max-w-3xl ml-1 pt-2">As everyone, we like to stand out. We believe that you and your brand strive for the same goal, so let us create something unique for you.</p>
     </div>
+  </article>
+  <article class="fixed bottom-0 flex flex-col items-center justify-center w-full pb-7">
+    <div class="bg-white p-4" (click)="_location.back()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+        <defs><style>.a,.b{fill:none;}.b{stroke:#4e008e;stroke-linecap:round;stroke-width:2px;}</style></defs>
+        <path class="a" d="M0,0H32V32H0Z"/>
+        <g transform="translate(3.963 3.963)">
+          <line class="b" x2="24.11" y2="24.11"/>
+          <line class="b" x1="24.11" y2="24.11"/>
+        </g>
+      </svg>
+    </div>
+    <p class="text-xl close-menu pt-5" (click)="_location.back()">Close menu</p>
   </article>
 </section>

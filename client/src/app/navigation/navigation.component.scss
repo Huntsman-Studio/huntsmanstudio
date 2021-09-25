@@ -6,6 +6,15 @@ section{
   li{
     color: #f8f8f8;
   }
+  li:hover{
+    text-decoration: line-through #6400b7;
+    cursor: pointer;
+  }
+
+  // P Close Menu
+  p.close-menu {
+    color: #D097FF;
+  }
 
   // Image Menu
   div.menu-image{
