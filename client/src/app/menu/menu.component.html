@@ -1,5 +1,6 @@
 <section class="flex justify-center"
   *ngIf="!_router.url.includes('nav')"
+  [ngClass]="[_router.url.includes('about') ? 'about' : '']"
 >
   <article class="w-full max-w-sm max-h-36">
     <div class="grid justify-items-center pt-9">
