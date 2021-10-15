@@ -2,13 +2,19 @@
 section{
   background-color: #4E008E;
 
-  // Li
-  li{
-    color: #f8f8f8;
-  }
-  li:hover{
-    text-decoration: line-through #6400b7;
-    cursor: pointer;
+  // UL
+  ul{
+    border-bottom: 1px solid #a73bff;
+
+    // Li
+    li {
+      color: #f8f8f8;
+    }
+
+    li:hover {
+      text-decoration: line-through #6400b7;
+      cursor: pointer;
+    }
   }
 
   // P Close Menu
@@ -16,23 +22,18 @@ section{
     color: #D097FF;
   }
 
-  // Image Menu
-  div.menu-image{
-    width: 1640px;
-    height: 559px;
-    background-image: url('../../assets/img/huntsman-menu.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80%;
+  // Social
+  div.social{
 
-    // H1
-    h1{
-      color: #f8f8f8;
-    }
+    // divs
+    div{
+      background-color: #F3F3F3;
 
-    // P
-    p{
-      color: #f8f8f8;
+      svg.icon{
+        .a {
+          fill: #4e008e;
+        }
+      }
     }
   }
 }
