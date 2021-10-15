@@ -18,7 +18,9 @@ module.exports = {
         "tustore": "url(assets/img/tustore.webp)",
         "j2": "url(assets/img/j2.webp)",
         // Menu
-        'menu-mb': "url('assets/img/huntsman-menu-mobile.svg')"
+        'menu-mb': "url('assets/img/huntsman-menu-mobile.svg')",
+        // Main
+        'main-mb': "url('assets/img/huntsman-main-mobile.svg')"
       }
     },
   },
