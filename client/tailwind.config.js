@@ -9,7 +9,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        // Work Page
         'work-mb': "url('assets/img/work-page-background-mobile.webp')",
+        'oliorama': "",
+        'ferye': "",
+        'j2': "",
+        "orfeas": "",
+        "coffee": ""
       }
     },
   },
