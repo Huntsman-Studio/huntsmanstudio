@@ -1,4 +1,6 @@
-<section class="flex justify-center items-center">
+<section
+  *ngIf="!_router.url.includes('nav')"
+  class="flex justify-center items-center">
   <article
     routerLink="nav"
     class="grid justify-items-center w-max">
