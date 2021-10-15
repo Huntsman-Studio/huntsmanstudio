@@ -1,0 +1,23 @@
+// Section
+section{
+  background-color: #2E005B;
+  // H1
+  h1.light{
+    color: #f3f3f3;
+  }
+
+  // H2
+  h2.light{
+    color: #f3f3f3;
+  }
+
+  // P
+  p.light{
+    color: #f3f3f3;
+  }
+
+  // Glass
+  div.glass{
+    backdrop-filter: blur(4px);
+  }
+}
