@@ -15,7 +15,9 @@ module.exports = {
         'ferye': "",
         'j2': "",
         "orfeas": "",
-        "coffee": ""
+        "coffee": "",
+        // Menu
+        'menu-mb': "url('assets/img/huntsman-menu-mobile.svg')"
       }
     },
   },
