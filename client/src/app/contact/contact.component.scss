@@ -1,12 +1,19 @@
-// Email 1
-div.email{
-  background-color: #2D2D2D;
+// Seciton
+section {
 
-  p.email{
+  // h1
+  h1 {
     color: #f3f3f3;
   }
 
-  .copy{
-    background-color: #4C4C4C;
+  // P
+  p {
+    color: #f3f3f3;
   }
+
+  // Mails
+  div.mail{
+    background-color: #2D2D2D;
+  }
+
 }
