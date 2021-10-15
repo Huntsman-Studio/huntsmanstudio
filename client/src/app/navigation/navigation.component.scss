@@ -17,13 +17,34 @@ section{
     }
   }
 
-  // P Close Menu
-  p.close-menu {
-    color: #D097FF;
-  }
-
   // Social
   div.social{
+
+    // hover
+    a:hover{
+      cursor: pointer;
+
+      // div
+      div{
+        background-color: #ce9cff;
+      }
+    }
+
+    // focus
+    a:focus{
+
+      // div
+      div {
+        background-color: #a73bff;
+      }
+
+      // icon
+      svg.icon {
+        .a {
+          fill: #f3f3f3;
+        }
+      }
+    }
 
     // divs
     div{
@@ -36,4 +57,66 @@ section{
       }
     }
   }
+
+  // Close section
+  div.close-section {
+    // Close
+    a{
+      div.close {
+
+        background-color: #f3f3f3;
+
+        // SVG
+        svg.close {
+
+          .a,
+          .b {
+            fill: none;
+          }
+
+          .b {
+            stroke: #4e008e;
+            stroke-linecap: round;
+            stroke-width: 2px;
+          }
+        }
+      }
+    }
+    // hover
+    a:hover{
+      // div
+      div.close:hover{
+        background-color: #ce9cff;
+      }
+    }
+    // focus
+    a:focus {
+      // div
+      div.close:focus {
+        background-color: #a73bff;
+
+        // svg
+        svg.close:focus {
+
+          .a,
+          .b {
+            fill: none;
+          }
+
+          .b {
+            stroke: #f3f3f3;
+            stroke-linecap: round;
+            stroke-width: 2px;
+          }
+        }
+      }
+    }
+
+    // Text
+    p {
+      color: #D097FF;
+    }
+  }
+
+
 }
