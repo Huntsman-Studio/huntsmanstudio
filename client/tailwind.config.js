@@ -7,7 +7,11 @@ module.exports = {
   },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'work-mb': "url('assets/img/work-page-background-mobile.webp')",
+      }
+    },
   },
   variants: {
     extend: {},

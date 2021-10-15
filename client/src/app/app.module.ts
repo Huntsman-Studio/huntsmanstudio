@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     NavigationComponent,
     WorkComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,
