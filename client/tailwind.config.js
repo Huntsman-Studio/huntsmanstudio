@@ -21,6 +21,48 @@ module.exports = {
         'menu-mb': "url('assets/img/huntsman-menu-mobile.svg')",
         // Main
         'main-mb': "url('assets/img/huntsman-main-mobile.svg')"
+      },
+
+      // backgroundColor
+      backgroundColor: theme => ({
+        ...theme('colors'),
+        'ink':'#0C0C0C',
+        'onyx':'#191919',
+        'coal':'#333333',
+        'grayDolphin':'#4C4C4C',
+        'oldSilver':'#666666',
+        'silverChalice':'#7F7F7F',
+        'grayCloud':'#B2B2B2',
+        'silver':'#CCCCCC',
+        'brightGray':'#E5E5E5',
+        'whiteSmoke':'#F3F3F3',
+        'irishPurple':'#2E005B',
+        'primary':'#4E008E',
+        'indigoLike':'#6400B7',
+        'amethyst':'#A73BFF',
+        'mauve':'#CE9CFF',
+        'ruby':'#FF3B70'
+      }),
+
+      // textColor
+      textColor: theme => theme('colors'),
+      textColor: {
+        'ink': '#0C0C0C',
+        'onyx': '#191919',
+        'coal': '#333333',
+        'grayDolphin': '#4C4C4C',
+        'oldSilver': '#666666',
+        'silverChalice': '#7F7F7F',
+        'grayCloud': '#B2B2B2',
+        'silver': '#CCCCCC',
+        'brightGray': '#E5E5E5',
+        'whiteSmoke': '#F3F3F3',
+        'irishPurple': '#2E005B',
+        'primary': '#4E008E',
+        'indigoLike': '#6400B7',
+        'amethyst': '#A73BFF',
+        'mauve': '#CE9CFF',
+        'ruby': '#FF3B70'
       }
     },
   },
