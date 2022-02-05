@@ -1,18 +1,31 @@
-<section class="bg-black pl-6 pr-6 pt-14 h-screen">
+<section>
+  <section class="bg-black pl-6 pr-6 pt-14 h-screen
+                lg:max-w-screen-2xl lg:pl-24"
+>
 
   <article>
 
     <!-- Text -->
-    <div class="w-full">
-      <h1 class="font-bold text-6xl">Talk with us</h1>
-      <p class="font-normal text-lg pt-3">asdasdasdasdasdasa sdasdasdasda s da sasdasdasdasdasd asasdasdasdasd asdasasdasd asdasdasdasasdasdasda sdasdas</p>
+    <div class="w-full md:w-4/5">
+      <h1 class="font-bold text-6xl md:text-8xl lg:text-9xl">Talk with us</h1>
+      <p class="font-normal text-lg pt-3
+        lg:pt-10 lg:text-xl lg:max-w-xl"
+      >
+        Μπορείς να επικοινωνήσεις μαζί μας στα παρακάτω email για οποιαδήποτε απορία, βοήθεια ή συνεργασία. Θα απαντήσουμε ακόμη και σε μηνύματα λατρείας.
+      </p>
     </div>
 
     <!-- Mails -->
-    <div class="pt-9 grid gap-4">
+    <div class="pt-9 grid gap-4
+                lg:flex"
+    >
 
       <!-- Mail 1 -->
-      <div class="mail grid gap-1 w-full pl-4 py-3" (click)="copyText('receiver@huntsmanstudio.gr')">
+      <div class="mail grid gap-1 w-full pl-4 py-3
+                  md:w-96"
+        (click)="copyText('receiver@huntsmanstudio.gr')"
+      >
+
         <div><p class="font-normal text-xl">Email 1:</p></div>
         <div><h2 class="font-bold text-lg text-white">receiver@huntsmanstudio.gr</h2></div>
         <div class="bg-white bg-opacity-20 w-10 h-10 flex justify-center items-center rounded-full">
@@ -22,10 +35,15 @@
             <path class="b" d="M16,8V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v8a2,2,0,0,0,2,2H8"/>
           </svg>
         </div>
+
       </div>
 
       <!-- Mail 2 -->
-      <div class="mail grid gap-1 w-full pl-4 py-3" (click)="copyText('welcome@huntsmanstudio.gr')">
+      <div class="mail grid gap-1 w-full pl-4 py-3
+                  md:w-96"
+        (click)="copyText('welcome@huntsmanstudio.gr')"
+      >
+
         <div><p class="font-normal text-xl">Email 2:</p></div>
         <div><h2 class="font-bold text-lg text-white">welcome@huntsmanstudio.gr</h2></div>
         <div class="bg-white bg-opacity-20 w-10 h-10 flex justify-center items-center rounded-full">
@@ -35,10 +53,30 @@
             <path class="b" d="M16,8V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v8a2,2,0,0,0,2,2H8"/>
           </svg>
         </div>
+
       </div>
-      
+
     </div>
 
   </article>
+
+  <!-- Social -->
+  <article class="md:absolute md:right-7 md:bottom-0">
+
+    <div class="grid gap-6 pt-12 pb-12">
+      <h1 class="text-whiteSmoke font-bold text-4xl">
+        <a href="https://www.linkedin.com/company/huntsman-studio" target="_blank">LinkedIn</a>
+      </h1>
+      <h1 class="text-whiteSmoke font-bold text-4xl">
+        <a href="https://www.facebook.com/Huntsmanstudiogr" target="_blank">Facebook</a>
+      </h1>
+      <h1 class="text-whiteSmoke font-bold text-4xl">
+        <a href="https://www.instagram.com/huntsmanstudiogr/" target="_blank">Instgram</a>
+      </h1>
+    </div>
+
+  </article>
+
+</section>
 
 </section>
