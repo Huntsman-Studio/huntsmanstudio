@@ -1,26 +1,44 @@
-<!-- ngxClipboard [cbContent]="'receiver@huntsmanstudio.gr'" -->
 <section class="bg-black pl-6 pr-6 pt-14 h-screen">
+
   <article>
+
     <!-- Text -->
     <div class="w-full">
       <h1 class="font-bold text-6xl">Talk with us</h1>
       <p class="font-normal text-lg pt-3">asdasdasdasdasdasa sdasdasdasda s da sasdasdasdasdasd asasdasdasdasd asdasasdasd asdasdasdasasdasdasda sdasdas</p>
     </div>
+
     <!-- Mails -->
     <div class="pt-9 grid gap-4">
+
       <!-- Mail 1 -->
-      <div class="mail grid gap-1 w-full pl-4 py-3">
+      <div class="mail grid gap-1 w-full pl-4 py-3" (click)="copyText('receiver@huntsmanstudio.gr')">
         <div><p class="font-normal text-xl">Email 1:</p></div>
         <div><h2 class="font-bold text-lg text-white">receiver@huntsmanstudio.gr</h2></div>
         <div class="bg-white bg-opacity-20 w-10 h-10 flex justify-center items-center rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <defs><style>.a,.b{fill:none;}.b{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs>
+          <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path class="a" d="M0,0H24V24H0Z"/>
             <rect class="b" width="12" height="12" rx="2" transform="translate(8 8)"/>
             <path class="b" d="M16,8V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v8a2,2,0,0,0,2,2H8"/>
           </svg>
         </div>
       </div>
+
+      <!-- Mail 2 -->
+      <div class="mail grid gap-1 w-full pl-4 py-3" (click)="copyText('welcome@huntsmanstudio.gr')">
+        <div><p class="font-normal text-xl">Email 2:</p></div>
+        <div><h2 class="font-bold text-lg text-white">welcome@huntsmanstudio.gr</h2></div>
+        <div class="bg-white bg-opacity-20 w-10 h-10 flex justify-center items-center rounded-full">
+          <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path class="a" d="M0,0H24V24H0Z"/>
+            <rect class="b" width="12" height="12" rx="2" transform="translate(8 8)"/>
+            <path class="b" d="M16,8V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v8a2,2,0,0,0,2,2H8"/>
+          </svg>
+        </div>
+      </div>
+      
     </div>
+
   </article>
+
 </section>

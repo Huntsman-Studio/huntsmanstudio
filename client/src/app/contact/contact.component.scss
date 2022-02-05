@@ -16,4 +16,19 @@ section {
     background-color: #2D2D2D;
   }
 
+  // Copy icon
+  svg.copy-icon{
+    .a,
+    .b {
+      fill: none;
+    }
+
+    .b {
+      stroke: #fff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.5px;
+    }
+  }
+
 }
