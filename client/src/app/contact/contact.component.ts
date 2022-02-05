@@ -16,8 +16,7 @@ export class ContactComponent implements OnInit {
   // Copy to ClipBoard
   copyText(textToCopy: string) {
     this.clipboard.copy(textToCopy);
-
-    console.log(textToCopy);
+    // console.log(textToCopy);
   }
 
 }
