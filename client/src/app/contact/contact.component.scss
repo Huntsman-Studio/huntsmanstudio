@@ -1,12 +1,12 @@
 // Seciton
 section {
 
-  @media only screen and (min-width: 1536px) {
-    .max-width-de{
-      max-width: 1920px;
+  .max-width-de{
+    @media (min-width: 1536px){
+      max-width: 1920px !important;
     }
   }
-
+  
   // h1
   h1 {
     color: #f3f3f3;

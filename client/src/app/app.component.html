@@ -1,15 +1,20 @@
 <main>
+
   <header class="hidden">
     <app-menu></app-menu>
   </header>
+
   <section
-    class="lg:flex lg:justify-center"
+    class="lg:flex lg:justify-center lg:3w-full"
+    [ngClass]="_router.url.includes('contact') ? 'bg-black' : ''"
   >
     <router-outlet></router-outlet>
   </section>
+
   <header class="fixed bottom-0 w-full">
     <!-- <div class="flex justify-center w-full"> -->
       <app-mobile-menu></app-mobile-menu>
     <!-- </div> -->
   </header>
+
 </main>
