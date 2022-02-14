@@ -1,12 +1,13 @@
 <main>
 
-  <header class="hidden">
+  <header class="fixed top-0 w-full hidden">
     <app-menu></app-menu>
   </header>
 
   <section
-    class="lg:flex lg:justify-center lg:3w-full"
-    [ngClass]="_router.url.includes('contact') ? 'bg-black' : ''"
+    class="lg:flex lg:justify-center lg:w-full lg:h-screen"
+    [ngClass]="_router.url.includes('contact') ? 'bg-black' : '' ||
+               _router.url.includes('work') ? 'bg-irishPurple md:bg-black' : '' "
   >
     <router-outlet></router-outlet>
   </section>

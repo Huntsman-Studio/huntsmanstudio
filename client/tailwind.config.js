@@ -11,7 +11,9 @@ module.exports = {
       backgroundImage: {
         // Work Page
         'work-mb': "url('assets/img/work-page-background-mobile.webp')",
+        'work': "url('assets/img/work-page-background.webp')",
         'oliorama': "url(assets/img/oliorama.webp)",
+        'oliorama-de': "url(assets/img/oliorama-de.webp)",
         'ferye': "url(assets/img/ferye.webp)",
         "orfeas": "url(assets/img/orfeascinema.webp)",
         "tokatiallo": "url(assets/img/tokatiallo.webp)",
