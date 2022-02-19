@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-work',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _router: Router) { }
 
   ngOnInit(): void {
   }
 
+  contact(){
+    this._router.navigateByUrl('/contact')
+  }
 }

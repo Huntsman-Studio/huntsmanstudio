@@ -1,7 +1,7 @@
 <section class="bg-work-mb bg-fixed bg-no-repeat bg-contain pl-6 pr-6 pt-20 pb-28 w-screen
-                  md:bg-work md:bg-contain"
+                  md:bg-work md:bg-cover flex justify-center"
 >
-  <section class="max-width-de flex justify-center">
+  <section class="max-width-de">
     <article class="grid">
       <h1 class="light font-bold text-6xl md:text-9xl">Building a legacy...</h1>
       <p class="light pt-2 md:pt-5 font-normal text-lg md:text-xl md:max-w-xl">Ideas, shapes, colours, coding and advertising are… the main ingredients to make any idea come to life. We cover all needs both in the digital and physical world by combining appropriate advertising with continuous presence.</p>
@@ -63,12 +63,21 @@
 
     </article>
 
-    <!-- Contact US -->
-    <article class="hidden md:block">
-      <div class="">
-
-      </div>
-    </article>
-
   </section>
+
+</section>
+
+<!-- Contact US -->
+<section class="hidden md:flex md:justify-center pt-16  bg-black">
+  <div class="grid">
+    <h1 class="text-white text-9xl font-bold">At your service! 🪖</h1>
+    <button
+      (click)="contact()"
+      class="bg-whiteSmoke pt-9 pb-9 pl-40 pr-40 mt-16
+                  text-primary font-bold text-xl"
+    >
+      Επικοινώνησε μαζί μας
+    </button>
+    <p class="pt-9 pb-16 text-whiteSmoke opacity-50 text-sm text-center">Huntsman Studio 💜</p>
+  </div>
 </section>
