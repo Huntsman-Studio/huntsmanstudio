@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        // Work Page
+        // Work
         'work-mb': "url('assets/img/work-page-background-mobile.webp')",
         'work': "url('assets/img/work-page-background.webp')",
         'oliorama': "url(assets/img/oliorama.webp)",
@@ -23,7 +23,9 @@ module.exports = {
         'menu-mb': "url('assets/img/huntsman-menu-mobile.webp')",
         // Main
         'main-mb': "url('assets/img/huntsman-main-mobile.webp')",
-        'main': "url('assets/img/huntsman-main.webp')"
+        'main': "url('assets/img/huntsman-main.webp')",
+        // AboutUs
+        'about-mb': "url('assets/img/about-us-mobile.webp')"
       },
 
       // backgroundColor
