@@ -22,7 +22,8 @@ module.exports = {
         // Menu
         'menu-mb': "url('assets/img/huntsman-menu-mobile.webp')",
         // Main
-        'main-mb': "url('assets/img/huntsman-main-mobile.webp')"
+        'main-mb': "url('assets/img/huntsman-main-mobile.webp')",
+        'main': "url('assets/img/huntsman-main.webp')"
       },
 
       // backgroundColor
