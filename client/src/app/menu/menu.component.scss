@@ -1,6 +1,6 @@
 // Section
-section{
-  background-color: #F3F3F3;
+section {
+  // background-color: #F3F3F3;
 
   // Article
   article {
@@ -9,13 +9,9 @@ section{
     // Logo
     svg.logo {
       width: 14rem;
-    }
-
-    svg.logo:hover{
-      cursor: pointer;
-    }
-    svg.logo:focus{
-      outline: none;
+      .cls-1 {
+        fill: #fff;
+      }
     }
 
     // Toglemenu
@@ -23,11 +19,18 @@ section{
       background-color: #A73BFF;
       width: 3rem;
       height: 3rem;
+      .a,
+      .b {
+        fill: none;
+      }
+
+      .b {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
     }
   }
-}
 
-// about page
-section.dark {
-  background-color: #000;
 }

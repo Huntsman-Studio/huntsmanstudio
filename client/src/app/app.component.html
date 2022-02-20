@@ -1,6 +1,6 @@
 <main>
 
-  <header class="fixed top-0 w-full hidden">
+  <header class="fixed top-0 w-full hidden md:block">
     <app-menu></app-menu>
   </header>
 
@@ -13,9 +13,7 @@
     <router-outlet></router-outlet>
   </section>
 
-  <header class="fixed bottom-0 w-full"
-    
-  >
+  <header class="fixed bottom-0 w-full md:hidden">
     <!-- <div class="flex justify-center w-full"> -->
       <app-mobile-menu></app-mobile-menu>
     <!-- </div> -->
