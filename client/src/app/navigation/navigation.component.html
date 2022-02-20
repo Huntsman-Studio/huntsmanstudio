@@ -1,7 +1,9 @@
-<section class="bg-menu-mb pl-9 pr-9 bg-center bg-no-repeat bg-contain">
-  <article>
-    <!-- Nav -->
-    <div>
+<section class="bg-menu-mb md:bg-menu md:bg-clip-padding pl-9 pr-9 bg-center bg-no-repeat bg-contain h-screen w-screen max-width-de">
+
+  <article class="">
+
+    <!-- MB:Nav -->
+    <div class="md:hidden">
       <ul class="pt-16">
         <li class="font-bold text-7xl h-32" routerLink="/main">home</li>
         <li class="font-bold text-7xl h-32" routerLink="/work">work</li>
@@ -9,8 +11,23 @@
         <li class="font-bold text-7xl h-32" routerLink="/contact">contact</li>
       </ul>
     </div>
+
+    <!-- DE:Nav -->
+    <div class="flex justify-center items-center gap-14 nav pt-11">
+      <h3 class="text-whiteSmoke font-bold text-7xl h-32 cursor-pointer" routerLink="/main">home</h3>
+      <h3 class="text-whiteSmoke font-bold text-7xl h-32 cursor-pointer" routerLink="/work">work</h3>
+      <h3 class="text-whiteSmoke font-bold text-7xl h-32 cursor-pointer" routerLink="/about">about</h3>
+      <h3 class="text-whiteSmoke font-bold text-7xl h-32 cursor-pointer" routerLink="/contact">contact</h3>
+    </div>
+
+    <!-- DE:Message -->
+    <div>
+      <h1 class="text-whiteSmoke font-bold text-9xl">Make some noise...</h1>
+      <p class="text-whiteSmoke font-regular text-2xl pt-5 max-w-2xl">As everyone, we like to stand out. We believe that you and your brand strive for the same goal, so let us create something unique for you.</p>
+    </div>
+
     <!-- Social -->
-    <div class="social flex justify-center items-center pt-8 gap-6">
+    <div class="social flex justify-center items-center pt-8 gap-6 md:hidden">
       <!-- Facebook -->
       <a href="https://www.facebook.com/Huntsmanstudiogr">
         <div class="flex justify-center items-center w-8 h-8">
@@ -59,24 +76,29 @@
         </div>
       </a>
     </div>
+
     <!-- Close -->
-    <div class="close-section pt-16 pb-5 grid justify-items-center">
-      <!-- Icon -->
-      <a (click)="_location.back()">
-        <div class="close w-16 h-16 flex justify-center items-center">
-          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-            <path class="a" d="M0,0H32V32H0Z"/>
-            <g transform="translate(3.963 3.963)">
-              <line class="b" x2="24.11" y2="24.11"/>
-              <line class="b" x1="24.11" y2="24.11"/>
-            </g>
-          </svg>
+    <div class="md:flex md:justify-center md:items-center">
+        <div class="close-section pt-16 pb-5 grid justify-items-center md:fixed md:bottom-5 cursor-pointer">
+        <!-- Icon -->
+        <a (click)="_location.back()">
+          <div class="close w-16 h-16 flex justify-center items-center">
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path class="a" d="M0,0H32V32H0Z"/>
+              <g transform="translate(3.963 3.963)">
+                <line class="b" x2="24.11" y2="24.11"/>
+                <line class="b" x1="24.11" y2="24.11"/>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <!-- Text -->
+        <div class="pt-2">
+          <p class="font-normal text-lg md:text-xl">Close Menu</p>
         </div>
-      </a>
-      <!-- Text -->
-      <div class="pt-2">
-        <p class="font-normal text-lg">Close Menu</p>
       </div>
+
     </div>
+
   </article>
 </section>

@@ -21,6 +21,7 @@ module.exports = {
         "j2": "url(assets/img/j2.webp)",
         // Menu
         'menu-mb': "url('assets/img/huntsman-menu-mobile.webp')",
+        'menu': "url('assets/img/huntsman-menu.webp')",
         // Main
         'main-mb': "url('assets/img/huntsman-main-mobile.webp')",
         'main': "url('assets/img/huntsman-main.webp')",
