@@ -5,19 +5,35 @@
     <!-- MB:Nav -->
     <div class="md:hidden">
       <ul class="pt-16">
-        <li class="font-bold text-7xl h-32" routerLink="/main">home</li>
-        <li class="font-bold text-7xl h-32" routerLink="/work">work</li>
-        <li class="font-bold text-7xl h-32" routerLink="/about">about</li>
-        <li class="font-bold text-7xl h-32" routerLink="/contact">contact</li>
+        <li
+          [ngClass]="previousUrl.includes('home') ? 'text-mauve' : '' "
+          class="font-bold text-7xl h-32" routerLink="/main">home</li>
+        <li
+          [ngClass]="previousUrl.includes('work') ? 'text-mauve' : '' "
+          class="font-bold text-7xl h-32" routerLink="/work">work</li>
+        <li
+          [ngClass]="previousUrl.includes('about') ? 'text-mauve' : '' "
+          class="font-bold text-7xl h-32" routerLink="/about">about</li>
+        <li
+          [ngClass]="previousUrl.includes('contact') ? 'text-mauve' : '' "
+          class="font-bold text-7xl h-32" routerLink="/contact">contact</li>
       </ul>
     </div>
 
     <!-- DE:Nav -->
     <div class="md:flex justify-center items-center gap-14 nav pt-11 hidden">
-      <h3 class="text-whiteSmoke font-bold text-7xl h-32 cursor-pointer" routerLink="/main">home</h3>
-      <h3 class="text-whiteSmoke font-bold text-7xl h-32 cursor-pointer" routerLink="/work">work</h3>
-      <h3 class="text-whiteSmoke font-bold text-7xl h-32 cursor-pointer" routerLink="/about">about</h3>
-      <h3 class="text-whiteSmoke font-bold text-7xl h-32 cursor-pointer" routerLink="/contact">contact</h3>
+      <h3
+        [ngClass]="previousUrl.includes('main') ? 'text-mauve' : 'text-whiteSmoke' "
+        class="font-bold text-7xl h-32 cursor-pointer" routerLink="/main">home</h3>
+      <h3
+        [ngClass]="previousUrl.includes('work') ? 'text-mauve' : 'text-whiteSmoke' "
+        class="font-bold text-7xl h-32 cursor-pointer" routerLink="/work">work</h3>
+      <h3
+        [ngClass]="previousUrl.includes('about') ? 'text-mauve' : 'text-whiteSmoke' "
+        class="font-bold text-7xl h-32 cursor-pointer" routerLink="/about">about</h3>
+      <h3
+        [ngClass]="previousUrl.includes('contact') ? 'text-mauve' : 'text-whiteSmoke' "
+        class="font-bold text-7xl h-32 cursor-pointer" routerLink="/contact">contact</h3>
     </div>
 
     <!-- DE:Message -->

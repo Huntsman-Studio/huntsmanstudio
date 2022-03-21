@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 import { Location } from '@angular/common';
+import { NavService } from '../nav.service';
 
 @Component({
   selector: 'app-navigation',
@@ -9,10 +10,15 @@ import { Location } from '@angular/common';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private _router: Router,
-              public _location: Location) { }
+  public previousUrl: any;
 
-  ngOnInit(): void {
+  constructor(private _router: Router,
+              public _location: Location,
+              private NavService: NavService) { }
+
+  ngOnInit() {
+    this.previousUrl = this.NavService.getPreviousUrl();
+    console.log(this.previousUrl);
   }
 
 }
