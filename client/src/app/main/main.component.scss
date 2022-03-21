@@ -5,4 +5,36 @@ section{
   h1{
     color: #0C0C0C;
   }
+
+  // Social
+  article.footer{
+
+    box-shadow: 33px 43px 76px 0px rgba(0, 0, 0, 0.47);
+
+    svg.fb{
+      .a {
+        fill: #4e008e;
+      }
+    }
+
+    svg.insta{
+      .a {
+        fill: #4e008e;
+      }
+    }
+
+    svg.behance{
+      .a {
+        fill: #4e008e;
+      }
+    }
+
+    svg.linkedin{
+      .a {
+        fill: #4e008e;
+      }
+    }
+
+    
+  }
 }
