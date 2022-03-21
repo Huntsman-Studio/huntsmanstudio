@@ -8,6 +8,8 @@ import { Clipboard } from '@angular/cdk/clipboard';
 })
 export class ContactComponent implements OnInit {
 
+  public copy = false;
+
   constructor(private clipboard: Clipboard) { }
 
   ngOnInit(): void {
@@ -16,7 +18,15 @@ export class ContactComponent implements OnInit {
   // Copy to ClipBoard
   copyText(textToCopy: string) {
     this.clipboard.copy(textToCopy);
-    // console.log(textToCopy);
+    this.copy = true;
+
+    setTimeout( () => {
+      this.copy = false;
+      // console.log("beforeTime");
+    } , 1000);
+
+    // console.log("afterTime");
+    // this.copy = true;
   }
 
 }

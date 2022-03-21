@@ -6,7 +6,7 @@ section {
       max-width: 1920px !important;
     }
   }
-  
+
   // h1
   h1 {
     color: #f3f3f3;
@@ -22,6 +22,12 @@ section {
     background-color: #2D2D2D;
   }
 
+  svg.copy-icon:hover{
+    .b {
+      stroke: #CE9CFF;
+    }
+  }
+
   // Copy icon
   svg.copy-icon{
     .a,
@@ -35,6 +41,21 @@ section {
       stroke-linejoin: round;
       stroke-width: 1.5px;
     }
+
   }
 
+  // Copied
+  svg.copied{
+    .a,
+    .b {
+      fill: none;
+    }
+
+    .b {
+      stroke: #ce9cff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.5px;
+    }
+  }
 }

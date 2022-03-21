@@ -26,17 +26,25 @@
         <div class="md:flex md:items-center md:w-full md:gap-8 md:pt-6">
           <div><h2 class="font-bold text-lg md:text-xl text-white">receiver@huntsmanstudio.gr</h2></div>
           <div class="bg-white bg-opacity-20 w-10 h-10 flex justify-center items-center rounded-full">
-            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <!-- Copy -->
+            <svg
+              *ngIf="!copy"
+              class="copy-icon cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path class="a" d="M0,0H24V24H0Z"/>
               <rect class="b" width="12" height="12" rx="2" transform="translate(8 8)"/>
               <path class="b" d="M16,8V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v8a2,2,0,0,0,2,2H8"/>
+            </svg>
+            <!-- Copied -->
+            <svg class="copied" *ngIf="copy" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path class="a" d="M0,0H32V32H0Z"/>
+              <path class="b" d="M5,13.722l6.722,6.722L25.167,7" transform="translate(1.574 2.278)"/>
             </svg>
           </div>
         </div>
       </div>
 
       <!-- Mail 2 -->
-      <div class="mail grid gap-1 w-full pl-4 py-3
+      <!-- <div class="mail grid gap-1 w-full pl-4 py-3
                   md:w-96 md:pb-6"
         (click)="copyText('welcome@huntsmanstudio.gr')"
       >
@@ -45,7 +53,9 @@
         <div class="md:flex md:items-center md:w-full md:gap-8 md:pt-6">
           <div><h2 class="font-bold text-lg md:text-xl text-white">welcome@huntsmanstudio.gr</h2></div>
           <div class="bg-white bg-opacity-20 w-10 h-10 flex justify-center items-center rounded-full">
-            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <svg
+
+              class="copy-icon cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path class="a" d="M0,0H24V24H0Z"/>
               <rect class="b" width="12" height="12" rx="2" transform="translate(8 8)"/>
               <path class="b" d="M16,8V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v8a2,2,0,0,0,2,2H8"/>
@@ -53,7 +63,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
 
     </div>
 
