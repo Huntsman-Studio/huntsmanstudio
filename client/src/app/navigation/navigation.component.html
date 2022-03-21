@@ -6,7 +6,7 @@
     <div class="md:hidden">
       <ul class="pt-16">
         <li
-          [ngClass]="previousUrl.includes('home') ? 'text-mauve' : '' "
+          [ngClass]="previousUrl.includes('/') && !previousUrl.includes('work') && !previousUrl.includes('about') && !previousUrl.includes('contact') ? 'text-mauve' : '' "
           class="font-bold text-7xl h-32" routerLink="/">home</li>
         <li
           [ngClass]="previousUrl.includes('work') ? 'text-mauve' : '' "
@@ -23,7 +23,7 @@
     <!-- DE:Nav -->
     <div class="md:flex justify-center items-center gap-14 nav pt-11 hidden">
       <h3
-        [ngClass]="previousUrl.includes('main') ? 'text-mauve' : 'text-whiteSmoke' "
+        [ngClass]="previousUrl.includes('/') && !previousUrl.includes('work') && !previousUrl.includes('about') && !previousUrl.includes('contact') ? 'text-mauve' : 'text-whiteSmoke' "
         class="font-bold text-7xl h-32 cursor-pointer" routerLink="/">home</h3>
       <h3
         [ngClass]="previousUrl.includes('work') ? 'text-mauve' : 'text-whiteSmoke' "
