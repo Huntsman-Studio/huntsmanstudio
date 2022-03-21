@@ -18,7 +18,7 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
     this.previousUrl = this.NavService.getPreviousUrl();
-    console.log(this.previousUrl);
+    // console.log(this.previousUrl);
   }
 
 }
