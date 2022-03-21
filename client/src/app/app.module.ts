@@ -24,7 +24,7 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     MobileMenuComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ClipboardModule,
   ],
