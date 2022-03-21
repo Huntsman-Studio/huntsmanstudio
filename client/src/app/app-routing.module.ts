@@ -10,7 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 
 // Set routes
 const routes: Routes = [
-  { path: 'main', component: MainComponent },
+  { path: '', component: MainComponent },
   { path: '', redirectTo: '/main', pathMatch: 'full'},
   { path: 'nav', component: NavigationComponent },
   { path: 'about', component: AboutComponent },
