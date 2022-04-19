@@ -9,6 +9,8 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class MainComponent implements OnInit {
 
+  anio = new Date().getFullYear();
+
   constructor(private _meta: Meta, private _title: Title) {
 
     // Set meta to page
