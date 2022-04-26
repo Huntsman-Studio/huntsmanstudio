@@ -1,6 +1,7 @@
 <section
   *ngIf="!_router.url.includes('nav')"
   class="flex justify-center"
+  routerLink="/nav"
 >
 
   <article class="w-full max-w-sm max-h-36">
@@ -8,7 +9,6 @@
     <!-- Logo -->
     <div class="grid justify-items-center pt-9">
       <svg
-        routerLink="/main"
         class="logo cursor-pointer"
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1328.4 294.52"
       >
@@ -34,8 +34,12 @@
     </div>
 
     <!-- Hamburger -->
-    <div class="grid justify-items-end cursor-pointer" routerLink="/nav">
-      <div class="toglemenu flex justify-center items-center">
+    <div class="grid justify-items-end cursor-pointer">
+      <div [ngClass]="!_router.url.includes('work') ? 'zoom-in-zoom-out' : '' &&
+                      !_router.url.includes('about') ? 'zoom-in-zoom-out' : '' &&
+                      !_router.url.includes('contact') ? 'zoom-in-zoom-out' : ''"
+           class="toglemenu flex justify-center items-center"
+      >
         <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
           <path class="a" d="M0,0H32V32H0Z"/>
           <line class="b" x2="21.321" transform="translate(5.339 10.667)"/>
