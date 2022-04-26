@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /navigation/
+Disallow: /menu/
+Disallow: /mobile-menu/
+
+Sitemap: https://huntsmanstudio.gr/sitemap.xml
