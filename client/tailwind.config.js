@@ -68,7 +68,8 @@ module.exports = {
         'indigoLike': '#6400B7',
         'amethyst': '#A73BFF',
         'mauve': '#CE9CFF',
-        'ruby': '#FF3B70'
+        'ruby': '#FF3B70',
+        'work-h2': 'rgb(175,140,213)'
       }
     },
   },
