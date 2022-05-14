@@ -5,7 +5,10 @@
     routerLink="nav"
     class="grid justify-items-center w-max">
     <!-- square -->
-    <div class="square w-8 h-8 justify-self-end"></div>
+    <div
+      [ngClass]="(!_router.url.includes('work')  && !_router.url.includes('about') && !_router.url.includes('contact')) ? 'zoom-in-zoom-out' : ''"
+      class="bg-amethyst w-8 h-8 justify-self-end"
+    ></div>
     <div class="pl-12 pr-12 pb-5 -mt-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="141.348" height="37.569" viewBox="0 0 141.348 37.569">
         <defs><style>.a{fill:none;}.b{fill:#f3f3f3;}.c{fill:#fff;}</style></defs>
