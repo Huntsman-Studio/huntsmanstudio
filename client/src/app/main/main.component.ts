@@ -15,9 +15,10 @@ export class MainComponent implements OnInit {
 
     // Set meta to page
     this._meta.addTags([
-      { name: 'description', content: 'Home page of HuntsmanStudio' },
+      { name: 'description', content: 'Huntsman Studio is a Digital Agency. We provide innovative digital solutions based on your business needs using creativity cause it\'s our "weapon".' },
       { name: 'author', content: 'Developers department of HuntsmanStudio' },
-      { name: 'keywords', content: 'Apps, Websites, Branding, Marketing' }
+      { name: 'keywords', content: 'Apps, Websites, Branding, Marketing, Development' },
+      { name: 'robots', content: 'index, follow'}
     ]);
 
     this.setTitle('Home');

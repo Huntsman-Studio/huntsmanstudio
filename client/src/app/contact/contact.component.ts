@@ -14,9 +14,10 @@ export class ContactComponent implements OnInit {
   constructor(private _meta: Meta, private _title: Title, private clipboard: Clipboard) {
 
     this._meta.addTags([
-      { name: 'description', content: 'Contact page of HUntsmanStudio' },
+      { name: 'description', content: 'Our location is in Thessaloniki, Greece but you can contact us from wherever you want.' },
       { name: 'author', content: 'Delevoperrs Department of HuntsmanStudio' },
-      { name: 'keywords', content:'Huntsman, Studio, Contact' }
+      { name: 'keywords', content:'Huntsman, Studio, Contact' },
+      { name: 'robots', content: 'contact, follows'}
     ]);
 
     this.setTitle('Contact');

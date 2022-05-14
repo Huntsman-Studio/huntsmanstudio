@@ -12,9 +12,10 @@ export class WorkComponent implements OnInit {
   constructor(public _router: Router, private _meta: Meta, private _title: Title) {
 
     this._meta.addTags([
-      { name: 'description', content: 'A page where you can find all the projects that Huntsman Studio has worked on' },
+      { name: 'description', content: "Maybe you'll find something interesting in our portfolio. Check it out, we might impress you." },
       { name: 'author', content: 'Developrs Department of Huntsman Studio' },
-      { name: 'keywords', contnet: 'Apps, Development, Design, Architecture, Branding, Marketing' }
+      { name: 'keywords', contnet: 'Apps, Development, Design, Architecture, Branding, Marketing'},
+      { name: 'robots', content: 'work, follow'}
     ]);
 
     this.setTitle('Work');
