@@ -42,6 +42,7 @@ module.exports = {
         'silver':'#CCCCCC',
         'brightGray':'#E5E5E5',
         'whiteSmoke':'#F3F3F3',
+        'greySmoke': '#F5F5F5',
         'irishPurple':'#2E005B',
         'primary':'#4E008E',
         'indigoLike':'#6400B7',

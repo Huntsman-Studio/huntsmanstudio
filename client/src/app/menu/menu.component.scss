@@ -5,6 +5,7 @@ section {
   // Article
   article {
     background-color: #4E008E;
+    border-radius: 0px 0px 10px 10px;
 
     // Logo
     svg.logo {
@@ -16,7 +17,8 @@ section {
 
     // Toglemenu
     div.toglemenu {
-      background-color: #A73BFF;
+      border-radius: 10px;
+      background-color: #8600F5;
       width: 3rem;
       height: 3rem;
       .a,

@@ -6,11 +6,7 @@
 
   <section
     class="lg:flex lg:justify-center lg:w-full lg:h-screen min-h-full"
-    [ngClass]="_router.url.includes('contact') ? 'bg-black' : '' ||
-               _router.url.includes('work') ? 'bg-irishPurple md:bg-black' : '' ||
-               _router.url.includes('about') ? 'bg-black' : '' ||
-               _router.url.includes('nav') ? 'bg-primary' : '' "
-  >
+    [ngClass]="getPageBgColor()">
     <router-outlet></router-outlet>
   </section>
 
