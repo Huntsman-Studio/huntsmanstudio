@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +9,11 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private meta: Meta, private title: Title) {}
+  constructor(private meta: Meta, private title: Title, private clipboard: Clipboard) {}
 
   ngOnInit(): void {}
+
+  copyEmail(): void {
+    this.clipboard.copy("receiver@huntsmanstudio.gr");
+  }
 }
