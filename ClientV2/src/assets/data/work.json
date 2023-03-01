@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Kernel",
+        "description": "Η επικοινωνία της υψηλής ποιότητας προϊόντων ήταν βασική για να αναδείξουμε την τρούφα αμυγδάλου",
+        "image": "assets/images/kernel.png"
+    },
+    {
+        "title": "Ionic Μύκονος",
+        "description": "Η επικοινωνία της υψηλής ποιότητας προϊόντων ήταν βασική για να αναδείξουμε την τρούφα αμυγδάλου",
+        "image": "assets/images/ionic-mykonos.png"
+    },
+    {
+        "title": "Oliorama",
+        "description": "Η επικοινωνία της υψηλής ποιότητας προϊόντων ήταν βασική για να αναδείξουμε την τρούφα αμυγδάλου",
+        "image": "assets/images/oliorama.png"
+    },
+    {
+        "title": "Ferye",
+        "description": "Η επικοινωνία της υψηλής ποιότητας προϊόντων ήταν βασική για να αναδείξουμε την τρούφα αμυγδάλου",
+        "image": "assets/images/ferye.png"
+    },
+    {
+        "title": "Lampoudis",
+        "description": "Η επικοινωνία της υψηλής ποιότητας προϊόντων ήταν βασική για να αναδείξουμε την τρούφα αμυγδάλου",
+        "image": "assets/images/tyres-lampoudis.png"
+    },
+    {
+        "title": "“Το Κάτι Άλλο”",
+        "description": "Η επικοινωνία της υψηλής ποιότητας προϊόντων ήταν βασική για να αναδείξουμε την τρούφα αμυγδάλου",
+        "image": "assets/images/to-kati-allo.png"
+    }
+]

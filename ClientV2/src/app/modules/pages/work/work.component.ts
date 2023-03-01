@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { DataService } from 'src/app/core/services/data.service';
+import { IWork } from 'src/app/models/work';
 
 @Component({
   selector: 'app-work',
@@ -8,7 +10,17 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class WorkComponent implements OnInit {
 
-  constructor(private meta: Meta, private title: Title) {}
+  work: IWork[] = [];
 
-  ngOnInit(): void {}
+  constructor(private meta: Meta, private title: Title, private data: DataService) {}
+
+  ngOnInit(): void {
+    this.getWorkList();
+  }
+
+  getWorkList(): void {
+    this.data.getWorkList().subscribe( (val) => {
+      this.work = val;
+    })
+  }
 }

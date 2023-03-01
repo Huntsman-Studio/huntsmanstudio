@@ -1,1 +1,29 @@
-<p>work works!</p>
+<section class="bg-[#160029] w-full overflow-y-scroll">
+    <div class="px-4 pt-10">
+        <!-- title -->
+        <div class="px-2">
+            <h1 class="text-[#FAF5FF] text-[48px] font-bold">Building a legacy...</h1>
+            <p class="pt-6 text-[#E3C2FF] text-base">Ideas, shapes, colours, coding and advertising are… the main ingredients to make any idea come to life. We cover all needs both in the digital and physical world by combining appropriate advertising with continuous presence.</p>
+        </div>
+        <!-- work -->
+        <div class="pt-20">
+            <div class="space-y-32">
+                <div *ngFor="let item of work">
+                    <img class="w-full h-auto rounded-3xl" src="{{ item.image }}" alt="{{ item.title }}" />
+                    <h2 class="pt-5 px-2 text-[#FAF5FF] text-[32px] font-bold">{{ item.title }}</h2>
+                    <p class="pt-1 px-2 text-[#E3C2FF] text-base">{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+        <div class="pt-44 px-8 pb-72">
+            <div>
+                <h2 class="text-[#FAF5FF] text-[32px] font-bold text-center">At your service! 🪖</h2>
+                <div class="w-full pt-6 flex flex-col items-center justify-center gap-4">
+                    <button class="w-full h-[72px] bg-[#FAF5FF] text-[#160029] text-lg font-bold rounded-md">Μάθε για εμάς</button>
+                    <button class="w-full h-[72px] bg-[#8600F5] text-[#FAF5FF] text-lg font-bold rounded-md">Στείλε μας μήνυμα ❤️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
