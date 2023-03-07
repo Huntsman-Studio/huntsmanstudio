@@ -79,7 +79,7 @@
                         <li class="nav-item cursor-pointer">
                             <div class="flex items-center gap-3">
                                 <div>
-                                    <p class="text-white text-[40px] font-bold">
+                                    <p [routerLink]="['/']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
                                         home
                                     </p>
                                 </div>
@@ -89,7 +89,7 @@
                         <li class="nav-item cursor-pointer">
                             <div class="flex items-center gap-3">
                                 <div>
-                                    <p class="text-white text-[40px] font-bold">
+                                    <p [routerLink]="['/work']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
                                         work
                                     </p>
                                 </div>
@@ -99,7 +99,7 @@
                         <li class="nav-item cursor-pointer">
                             <div class="flex items-center gap-3">
                                 <div>
-                                    <p class="text-white text-[40px] font-bold">
+                                    <p [routerLink]="['/about']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
                                         about
                                     </p>
                                 </div>
@@ -109,7 +109,7 @@
                         <li class="nav-item cursor-pointer">
                             <div class="flex items-center gap-3">
                                 <div>
-                                    <p class="text-white text-[40px] font-bold">
+                                    <p [routerLink]="['/contact']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
                                         contact
                                     </p>
                                 </div>
@@ -123,7 +123,9 @@
     </div>
     <!-- close menu -->
     <div class="w-full flex justify-center absolute bottom-12">
-        <div (click)="closeMenu()" class="bg-[#8600F5] w-[72px] h-[72px] rounded-md flex justify-center items-center cursor-pointer">
+        <div (click)="closeMenu()" class="bg-[#8600F5] w-[72px] h-[72px] rounded-md flex justify-center items-center cursor-pointer
+            hover:bg-gradient-to-br hover:from-[#8600F5] hover:to-[#32005C]
+            focus:bg-[#32005C] focus:outline focus:outline-2 focus:outline-[#E3C2FF] focus:outline-offset-4">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M31.25 8.75L8.75 31.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M31.25 31.25L8.75 8.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

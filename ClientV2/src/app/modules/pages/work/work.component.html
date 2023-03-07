@@ -9,8 +9,8 @@
         <div class="pt-20">
             <div class="space-y-32">
                 <div *ngFor="let item of work">
-                    <img class="w-full h-auto rounded-3xl" src="{{ item.image }}" alt="{{ item.title }}" />
-                    <h2 class="pt-5 px-2 text-[#FAF5FF] text-[32px] font-bold">{{ item.title }}</h2>
+                    <img routerLink="{{item.link}}" class="w-full h-auto rounded-3xl cursor-pointer" src="{{ item.image }}" alt="{{ item.title }}" lazyload />
+                    <h2 routerLink="{{item.link}}" class="pt-5 px-2 text-[#FAF5FF] text-[32px] font-bold cursor-pointer">{{ item.title }}</h2>
                     <p class="pt-1 px-2 text-[#E3C2FF] text-base">{{ item.description }}</p>
                 </div>
             </div>
@@ -20,8 +20,8 @@
             <div>
                 <h2 class="text-[#FAF5FF] text-[32px] font-bold text-center">At your service! 🪖</h2>
                 <div class="w-full pt-6 flex flex-col items-center justify-center gap-4">
-                    <button class="w-full h-[72px] bg-[#FAF5FF] text-[#160029] text-lg font-bold rounded-md">Μάθε για εμάς</button>
-                    <button class="w-full h-[72px] bg-[#8600F5] text-[#FAF5FF] text-lg font-bold rounded-md">Στείλε μας μήνυμα ❤️</button>
+                    <button [routerLink]="['/about']" class="w-full h-[72px] bg-[#FAF5FF] text-[#160029] text-lg font-bold rounded-md hover:bg-[#D9D9D9] focus:text-white focus:bg-[#D9D9D9] focus:outline focus:outline-2 focus:outline-[#BFBFBF] focus:outline-offset-4">Μάθε για εμάς</button>
+                    <button [routerLink]="['/contact']" class="w-full h-[72px] bg-[#8600F5] text-[#FAF5FF] text-lg font-bold rounded-md hover:bg-gradient-to-br hover:from-[#8600F5] hover:to-[#32005C] focus:bg-[#32005C] focus:outline focus:outline-2 focus:outline-[#E3C2FF] focus:outline-offset-4">Στείλε μας μήνυμα ❤️</button>
                 </div>
             </div>
         </div>
