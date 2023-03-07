@@ -6,6 +6,7 @@ import { OlioramaComponent } from './oliorama/oliorama.component';
 import { FeryeComponent } from './ferye/ferye.component';
 import { TyresLampoudisComponent } from './tyres-lampoudis/tyres-lampoudis.component';
 import { ToKatiAlloComponent } from './to-kati-allo/to-kati-allo.component';
+import { WorkRoutingModule } from './work-routing.module';
 
 
 
@@ -19,7 +20,8 @@ import { ToKatiAlloComponent } from './to-kati-allo/to-kati-allo.component';
     ToKatiAlloComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    WorkRoutingModule
   ]
 })
 export class WorkModule { }
