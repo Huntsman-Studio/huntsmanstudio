@@ -80,7 +80,7 @@
                             <div class="flex items-center gap-3">
                                 <div>
                                     <p [routerLink]="['/']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
-                                        home
+                                        {{ 'HomeMenuItem' | translate }}
                                     </p>
                                 </div>
                                 <div class="w-4 h-4 bg-[#8600F5] rounded-md point hidden"></div>
@@ -90,7 +90,7 @@
                             <div class="flex items-center gap-3">
                                 <div>
                                     <p [routerLink]="['/work']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
-                                        work
+                                        {{ 'WorkMenuItem' | translate }}
                                     </p>
                                 </div>
                                 <div class="w-4 h-4 bg-[#8600F5] rounded-md point hidden"></div>
@@ -100,7 +100,7 @@
                             <div class="flex items-center gap-3">
                                 <div>
                                     <p [routerLink]="['/about']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
-                                        about
+                                        {{ 'AboutMenuItem' | translate }}
                                     </p>
                                 </div>
                                 <div class="w-4 h-4 bg-[#8600F5] rounded-md point hidden"></div>
@@ -110,7 +110,7 @@
                             <div class="flex items-center gap-3">
                                 <div>
                                     <p [routerLink]="['/contact']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
-                                        contact
+                                        {{ 'ContactMenuItem' | translate }}
                                     </p>
                                 </div>
                                 <div class="w-4 h-4 bg-[#8600F5] rounded-md point hidden"></div>
@@ -134,6 +134,6 @@
     </div>
     <!-- copyright -->
     <div class="w-full absolute top-3">
-        <p class="text-center text-[#B55CFF] text-xs">© {{ anio }} Huntsman Studio | Privacy Notice</p>
+        <p class="text-center text-[#B55CFF] text-xs">© {{ anio }} {{ 'Copyright' | translate }} </p>
     </div>
 </section>
