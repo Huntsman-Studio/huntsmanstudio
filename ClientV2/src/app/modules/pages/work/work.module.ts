@@ -7,6 +7,7 @@ import { FeryeComponent } from './ferye/ferye.component';
 import { TyresLampoudisComponent } from './tyres-lampoudis/tyres-lampoudis.component';
 import { ToKatiAlloComponent } from './to-kati-allo/to-kati-allo.component';
 import { WorkRoutingModule } from './work-routing.module';
+import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
 
 
 
@@ -17,7 +18,8 @@ import { WorkRoutingModule } from './work-routing.module';
     OlioramaComponent,
     FeryeComponent,
     TyresLampoudisComponent,
-    ToKatiAlloComponent
+    ToKatiAlloComponent,
+    BottomNavComponent
   ],
   imports: [
     CommonModule,
