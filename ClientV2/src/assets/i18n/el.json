@@ -1,8 +1,14 @@
 {
-    "Copyright": " Huntsman Studio | Πολιτική Απορρήτου",
-    "HomeMenuItem": "αρχική",
-    "WorkMenuItem": "έργα",
-    "AboutMenuItem": "σχετικά",
-    "ContactMenuItem": "επικοινωνία",
-    "MainPageTitle": "Creativity is our \"weapon\""
+    "nav": {
+        "title": "Make some noise...",
+        "content": "Συνδυάζοντας δημιουργικότητα και τεχνογνωσία, με κάθε έργο μας στοχεύουμε στον αντικατοπτρισμό της μοναδικότητας και της ταυτότητας που χαρακτηρίζει τους συνεργάτες μας.",
+        "copyright": "Huntsman Studio | Πολιτική Απορρήτου",
+        "homeMenuItem": "αρχική",
+        "workMenuItem": "έργα",
+        "aboutMenuItem": "σχετικά",
+        "contactMenuItem": "επικοινωνία"
+    },
+    "home": {
+        "title": "Creativity is our \"weapon\""
+    }
 }

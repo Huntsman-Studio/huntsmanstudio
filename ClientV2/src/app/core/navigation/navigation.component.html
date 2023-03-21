@@ -1,8 +1,8 @@
-<section *ngIf="menu" class="bg-[#4E008E] w-full h-screen absolute top-0 left-0 z-50">
-    <div class="w-full pl-10">
-        <div class="bg-[url('assets/images/bg-navigation-vertical-view.svg')] bg-no-repeat bg-contain bg-left w-full h-screen">
+<section *ngIf="menu" class="bg-[#4E008E] w-full h-screen absolute top-0 left-0 z-50 flex justify-center">
+    <div class="w-full pl-10 md:pl-0 md:max-w-[1920px] md:px-6">
+        <div class="bg-[url('assets/images/bg-navigation-vertical-view.svg')] md:bg-[url('assets/images/bg-navigation-horizontal-view.svg')]  bg-no-repeat bg-contain bg-left md:bg-center w-full h-screen md:flex md:flex-col">
             <!-- social -->
-            <div class="pt-20 space-y-4">
+            <div class="pt-20 space-y-4 md:hidden">
                 <!-- linkedin -->
                 <div class="flex items-center gap-4 cursor-pointer">
                     <p>
@@ -73,51 +73,56 @@
                 </div>
             </div>
             <!-- nav -->
-            <div class="pt-12">
+            <div class="pt-12 md:pt-16">
                 <nav>
-                    <ul class="list-none space-y-10">
+                    <ul class="list-none md:flex md:justify-center md:space-y-0 md:gap-12 space-y-10">
                         <li class="nav-item cursor-pointer">
-                            <div class="flex items-center gap-3">
+                            <div class="flex md:flex-col items-center gap-3">
                                 <div>
                                     <p [routerLink]="['/']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
-                                        {{ 'HomeMenuItem' | translate }}
+                                        {{ 'nav.homeMenuItem' | translate }}
                                     </p>
                                 </div>
-                                <div class="w-4 h-4 bg-[#8600F5] rounded-md point hidden"></div>
+                                <div class="w-4 h-4 md:w-8 md:h-8 rounded-md point"></div>
                             </div>
                         </li>
                         <li class="nav-item cursor-pointer">
-                            <div class="flex items-center gap-3">
+                            <div class="flex md:flex-col  items-center gap-3">
                                 <div>
                                     <p [routerLink]="['/work']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
-                                        {{ 'WorkMenuItem' | translate }}
+                                        {{ 'nav.workMenuItem' | translate }}
                                     </p>
                                 </div>
-                                <div class="w-4 h-4 bg-[#8600F5] rounded-md point hidden"></div>
+                                <div class="w-4 h-4 md:w-8 md:h-8 rounded-md point"></div>
                             </div>
                         </li>
                         <li class="nav-item cursor-pointer">
-                            <div class="flex items-center gap-3">
+                            <div class="flex md:flex-col  items-center gap-3">
                                 <div>
                                     <p [routerLink]="['/about']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
-                                        {{ 'AboutMenuItem' | translate }}
+                                        {{ 'nav.aboutMenuItem' | translate }}
                                     </p>
                                 </div>
-                                <div class="w-4 h-4 bg-[#8600F5] rounded-md point hidden"></div>
+                                <div class="w-4 h-4 md:w-8 md:h-8 rounded-md point"></div>
                             </div>
                         </li>
                         <li class="nav-item cursor-pointer">
-                            <div class="flex items-center gap-3">
+                            <div class="flex md:flex-col  items-center gap-3">
                                 <div>
                                     <p [routerLink]="['/contact']" routerLinkActive="" (click)="closeMenu()" class="text-white text-[40px] font-bold">
-                                        {{ 'ContactMenuItem' | translate }}
+                                        {{ 'nav.contactMenuItem' | translate }}
                                     </p>
                                 </div>
-                                <div class="w-4 h-4 bg-[#8600F5] rounded-md point hidden"></div>
+                                <div class="w-4 h-4 md:w-8 md:h-8 rounded-md point"></div>
                             </div>
                         </li>
                     </ul>
                 </nav>
+            </div>
+            <!-- contnet-->
+            <div class="hidden md:block pt-[20%] px-12">
+                <h1 class="text-white text-[84px] font-bold">{{ 'nav.title' | translate }}</h1>
+                <p class="text-white text-lg pt-6 max-w-[476px]">{{ 'nav.content' | translate }}</p>
             </div>
         </div>
     </div>
@@ -133,7 +138,7 @@
         </div>
     </div>
     <!-- copyright -->
-    <div class="w-full absolute top-3">
-        <p class="text-center text-[#B55CFF] text-xs">© {{ anio }} {{ 'Copyright' | translate }} </p>
+    <div class="w-full absolute md:bottom-3 pt-3">
+        <p class="text-center text-[#B55CFF] text-xs">© {{ anio }} {{ 'nav.copyright' | translate }} </p>
     </div>
 </section>

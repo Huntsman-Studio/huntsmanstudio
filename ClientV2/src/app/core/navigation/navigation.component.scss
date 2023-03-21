@@ -1,5 +1,10 @@
 li.nav-item:hover {
     div.point {
-        display: block;
+        background-color: #8600F5;
+    }
+}
+li.nav-item {
+    div.point {
+        background-color: transparent;
     }
 }
