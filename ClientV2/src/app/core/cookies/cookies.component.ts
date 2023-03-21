@@ -14,6 +14,7 @@ export class CookiesComponent implements OnInit {
   ngOnInit(): void {}
 
   handleCookie(): void {
+    console.log('Hit');
     if (!this.cookie) {
       this.cookie = true;
     } else {

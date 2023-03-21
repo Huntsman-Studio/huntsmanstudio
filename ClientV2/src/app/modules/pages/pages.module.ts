@@ -8,6 +8,7 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CoreModule } from 'src/app/core/core.module';
 
 
 
@@ -21,6 +22,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   imports: [
     CommonModule,
     PagesRoutingModule,
+    CoreModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
