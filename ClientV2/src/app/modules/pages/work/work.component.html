@@ -1,27 +1,33 @@
-<section class="bg-[#160029] w-full overflow-y-scroll">
-    <div class="px-4 pt-10">
+<section class="bg-[#160029] w-full overflow-y-scroll md:flex md:justify-center">
+    <div class="px-4 pt-10 md:pt-52 md:px-20 md:max-w-[1280px]">
         <!-- title -->
-        <div class="px-2">
-            <h1 class="text-[#FAF5FF] text-[48px] font-bold">Building a legacy...</h1>
-            <p class="pt-6 text-[#E3C2FF] text-base">Ideas, shapes, colours, coding and advertising are… the main ingredients to make any idea come to life. We cover all needs both in the digital and physical world by combining appropriate advertising with continuous presence.</p>
+        <div class="px-2 md:px-0">
+            <h1 class="text-[#FAF5FF] text-[48px] font-bold md:max-w-[1095px]">{{ 'work.title' | translate }}</h1>
+            <p class="pt-6 md:pt-11 text-[#E3C2FF] text-base md:text-lg md:max-w-[541px]">{{ 'work.content' | translate }}</p>
         </div>
         <!-- work -->
         <div class="pt-20">
             <div class="space-y-32">
                 <div *ngFor="let item of work">
-                    <img routerLink="{{item.link}}" class="w-full h-auto rounded-3xl cursor-pointer" src="{{ item.image }}" alt="{{ item.title }}" lazyload />
-                    <h2 routerLink="{{item.link}}" class="pt-5 px-2 text-[#FAF5FF] text-[32px] font-bold cursor-pointer">{{ item.title }}</h2>
-                    <p class="pt-1 px-2 text-[#E3C2FF] text-base">{{ item.description }}</p>
+                    <img routerLink="{{item.link}}" class="md:hidden w-full h-auto rounded-3xl cursor-pointer" src="{{ item.image }}" alt="{{ item.title }}" lazyload />
+                    <img routerLink="{{item.link}}" class="hidden md:block w-full max-w-[1120px] h-auto md:max-h-[450px] rounded-3xl cursor-pointer hover:outline hover:outline-offset-4 hover:outline-[#8600F5]" src="{{item.imageDe}}" alt="{{item.title}}" lazyload />
+                    <div class="hidden md:flex justify-end items-center gap-4 w-full pr-4 -mt-14">
+                        <div *ngFor="let tag of item.tags" class="px-2 py-2 bg-[#160029] rounded-md">
+                            <p class="text-[#FAF5FF] text-sm">{{tag}}</p>
+                        </div>
+                    </div>
+                    <h2 routerLink="{{item.link}}" class="pt-5 md:pt-8 px-2 text-[#FAF5FF] text-[32px] md:text-[64px] font-bold cursor-pointer">{{ item.title }}</h2>
+                    <p class="pt-1 md:pt-2 px-2 text-[#E3C2FF] text-base md:text-2xl md:max-w-[578px]">{{ item.description }}</p>
                 </div>
             </div>
         </div>
         <!-- contact -->
         <div class="pt-44 px-8 pb-72">
             <div>
-                <h2 class="text-[#FAF5FF] text-[32px] font-bold text-center">At your service! 🪖</h2>
-                <div class="w-full pt-6 flex flex-col items-center justify-center gap-4">
-                    <button [routerLink]="['/about']" class="w-full h-[72px] bg-[#FAF5FF] text-[#160029] text-lg font-bold rounded-md hover:bg-[#D9D9D9] focus:text-white focus:bg-[#D9D9D9] focus:outline focus:outline-2 focus:outline-[#BFBFBF] focus:outline-offset-4">Μάθε για εμάς</button>
-                    <button [routerLink]="['/contact']" class="w-full h-[72px] bg-[#8600F5] text-[#FAF5FF] text-lg font-bold rounded-md hover:bg-gradient-to-br hover:from-[#8600F5] hover:to-[#32005C] focus:bg-[#32005C] focus:outline focus:outline-2 focus:outline-[#E3C2FF] focus:outline-offset-4">Στείλε μας μήνυμα ❤️</button>
+                <h2 class="text-[#FAF5FF] text-[32px] font-bold text-center">{{ 'work.service' | translate }}</h2>
+                <div class="w-full pt-6 flex flex-col md:flex-row items-center justify-center gap-4">
+                    <button [routerLink]="['/about']" class="w-full md:w-[280px] h-[72px] bg-[#FAF5FF] text-[#160029] text-lg font-bold rounded-md hover:bg-[#D9D9D9] focus:text-white focus:bg-[#D9D9D9] focus:outline focus:outline-2 focus:outline-[#BFBFBF] focus:outline-offset-4">{{ 'work.about' | translate }}</button>
+                    <button [routerLink]="['/contact']" class="w-full md:w-[280px] h-[72px] bg-[#8600F5] text-[#FAF5FF] text-lg font-bold rounded-md hover:bg-gradient-to-br hover:from-[#8600F5] hover:to-[#32005C] focus:bg-[#32005C] focus:outline focus:outline-2 focus:outline-[#E3C2FF] focus:outline-offset-4">{{ 'work.contact' | translate }}</button>
                 </div>
             </div>
         </div>
