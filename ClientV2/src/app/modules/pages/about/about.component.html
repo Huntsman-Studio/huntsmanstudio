@@ -31,7 +31,7 @@
             </div>
         </div>
         <!-- Accordion -->
-        <div id="accordionExample" class="pt-10 space-y-11">
+        <div id="accordionExample" class="pt-10 space-y-11 pb-48">
             <div class="rounded-[10px]">
                 <h2 class="mb-0" id="headingOne">
                     <button class="pt-6 px-4 group relative flex w-full items-center text-left text-white text-2xl transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:ouline-none bg-transparent rounded-t-[10px] [&:not([data-te-collapse-collapsed])]:bg-[#32005C]"
@@ -65,8 +65,9 @@
                     <button class="pt-6 px-4 group relative flex w-full items-center text-left text-white text-2xl transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:ouline-none bg-transparent rounded-t-[10px] [&:not([data-te-collapse-collapsed])]:bg-[#32005C]"
                         type="button"
                         data-te-collapse-init
+                        data-te-collapse-collapsed
                         data-te-target="#collapseTwo"
-                        aria-expanded="true"
+                        aria-expanded="false"
                         aria-controls="collapseTwo">
                         {{ 'about.branding.title' | translate }}
                         <span class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 motion-reduce:transition-none">
@@ -78,13 +79,40 @@
                 </h2>
                 <div
                     id="collapseTwo"
-                    class="!visible bg-[#32005C] rounded-b-[10px]"
+                    class="!visible hidden bg-[#32005C] rounded-b-[10px]"
                     data-te-collapse-item
-                    data-te-collapse-show
                     aria-labelledby="headingTwo"
                     data-te-parent="#accordionExample">
                     <div class="py-6 px-4">
                         <p class="text-[#E3C2FF] text-lg">{{ 'about.branding.content' | translate }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-[10px]">
+                <h2 class="mb-0" id="headingThree">
+                    <button class="pt-6 px-4 group relative flex w-full items-center text-left text-white text-2xl transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:ouline-none bg-transparent rounded-t-[10px] [&:not([data-te-collapse-collapsed])]:bg-[#32005C]"
+                        type="button"
+                        data-te-collapse-init
+                        data-te-collapse-collapsed
+                        data-te-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree">
+                        {{ 'about.it.title' | translate }}
+                        <span class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 motion-reduce:transition-none">
+                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 1L11 11L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </h2>
+                <div
+                    id="collapseThree"
+                    class="!visible hidden bg-[#32005C] rounded-b-[10px]"
+                    data-te-collapse-item
+                    aria-labelledby="headingThree"
+                    data-te-parent="#accordionExample">
+                    <div class="py-6 px-4">
+                        <p class="text-[#E3C2FF] text-lg">{{ 'about.it.content' | translate }}</p>
                     </div>
                 </div>
             </div>
