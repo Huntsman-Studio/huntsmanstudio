@@ -8,6 +8,9 @@ import { TyresLampoudisComponent } from './tyres-lampoudis/tyres-lampoudis.compo
 import { ToKatiAlloComponent } from './to-kati-allo/to-kati-allo.component';
 import { WorkRoutingModule } from './work-routing.module';
 import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { httpTranslateLoader } from '../pages.module';
+import { HttpClient } from '@angular/common/http';
 
 
 
@@ -23,7 +26,14 @@ import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
   ],
   imports: [
     CommonModule,
-    WorkRoutingModule
+    WorkRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ]
 })
 export class WorkModule { }

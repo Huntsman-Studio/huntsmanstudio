@@ -50,8 +50,17 @@
             }
         }
     },
+    "bottom-nav": {
+        "thanks":"Ευχαριστούμε! 😊",
+        "title": "Αν θέλεις μπορείς να δεις περισσότερες δουλειές μας παρακάτω",
+        "work": "Περισσότερα Project",
+        "home": "Επιστροφή στην αρχική"
+    },
     "kernel": {
-
+        "title": {
+            "sub": "Εμπόριο τρούφας αμυγδάλου",
+            "tags": "Brand Identity, Packaging, Website"
+        }
     },
     "oliorama": {
 
