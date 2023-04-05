@@ -8,11 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class BottomNavComponent implements OnInit {
 
-  constructor(public translate: TranslateService) {
-    // set languages
-    translate.addLangs(['en', 'el', 'tr', 'it', 'sq']);
-    translate.setDefaultLang('el');
-  }
+  constructor(public translate: TranslateService) {}
 
   ngOnInit(): void {
     

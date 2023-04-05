@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class GlobaldataService {
 
   public menu: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
-  public lang: BehaviorSubject<string> = new BehaviorSubject<string>("el");
+  public lang: BehaviorSubject<string> = new BehaviorSubject<string>("en");
 
   constructor() { }
 

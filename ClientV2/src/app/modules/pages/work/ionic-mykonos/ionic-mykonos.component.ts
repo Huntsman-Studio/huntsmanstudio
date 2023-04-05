@@ -9,13 +9,10 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class IonicMykonosComponent implements OnInit {
 
-  constructor(private meta: Meta,
+  constructor(
+    private meta: Meta,
     private title: Title,
-    public translate: TranslateService) {
-      // set language
-      translate.addLangs(['en', 'el', 'tr', 'it']);
-      translate.setDefaultLang('el');
-    }
+    public translate: TranslateService) {}
 
   ngOnInit(): void {
     

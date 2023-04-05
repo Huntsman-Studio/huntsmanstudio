@@ -1,3 +1,11 @@
 {
-    
+    "nav": {
+        "title": "Make some noise...",
+        "content": "Συνδυάζοντας δημιουργικότητα και τεχνογνωσία, με κάθε έργο μας στοχεύουμε στον αντικατοπτρισμό της μοναδικότητας και της ταυτότητας που χαρακτηρίζει τους συνεργάτες μας.",
+        "copyright": "Huntsman Studio | Privacy Policy",
+        "homeMenuItem": "home",
+        "workMenuItem": "work",
+        "aboutMenuItem": "about",
+        "contactMenuItem": "contact"
+    }
 }

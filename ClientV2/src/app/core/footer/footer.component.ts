@@ -11,9 +11,6 @@ export class FooterComponent implements OnInit {
   anio = new Date().getFullYear();
 
   constructor(public translate: TranslateService) {
-    // set languages
-    translate.addLangs(['en', 'el', 'tr', 'it']);
-    translate.setDefaultLang('el');
   }
 
   ngOnInit(): void {}

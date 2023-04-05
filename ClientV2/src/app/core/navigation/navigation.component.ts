@@ -12,11 +12,11 @@ export class NavigationComponent implements OnInit{
   anio = new Date().getFullYear();
 
   menu: boolean | undefined;
-
-  constructor(private globalDataService: GlobaldataService, public translate: TranslateService) {
-    translate.addLangs(['en','el','tr','it']);
-    translate.setDefaultLang('el');
-  }
+  // lang: string = 'en';
+  constructor(
+    private globalDataService: GlobaldataService,
+    public translate: TranslateService) {
+    }
 
   ngOnInit(): void {
     // Check menu

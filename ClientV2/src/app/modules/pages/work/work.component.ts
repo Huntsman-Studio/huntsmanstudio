@@ -16,11 +16,7 @@ export class WorkComponent implements OnInit {
   constructor(private meta: Meta, 
     private title: Title, 
     private data: DataService, 
-    public translate: TranslateService) {
-      // set languages
-      translate.addLangs(['en', 'el', 'tr', 'it']);
-      translate.setDefaultLang('el');
-    }
+    public translate: TranslateService) {}
 
   ngOnInit(): void {
     this.getWorkList();

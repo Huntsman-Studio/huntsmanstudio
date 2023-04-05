@@ -10,14 +10,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private meta: Meta, 
+  constructor(
+    private meta: Meta, 
     private title: Title, 
     private clipboard: Clipboard,
-    public translate: TranslateService) {
-      // set languages
-      translate.addLangs(['en', 'el', 'tr', 'it']);
-      translate.setDefaultLang('el');
-    }
+    public translate: TranslateService) {}
 
   ngOnInit(): void {}
 
