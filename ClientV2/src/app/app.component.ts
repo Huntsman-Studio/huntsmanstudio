@@ -10,7 +10,7 @@ import { GlobaldataService } from './core/services/globaldata.service';
 export class AppComponent {
   title = 'Huntsman Studio';
 
-  lang: string = 'en';
+  lang: string = "";
 
   constructor (
     public translate: TranslateService,

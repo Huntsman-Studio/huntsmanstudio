@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { DataService } from 'src/app/core/services/data.service';
+import { GlobaldataService } from 'src/app/core/services/globaldata.service';
 import { IWork } from 'src/app/models/work';
 
 @Component({
@@ -16,7 +17,15 @@ export class WorkComponent implements OnInit {
   constructor(private meta: Meta, 
     private title: Title, 
     private data: DataService, 
-    public translate: TranslateService) {}
+    public translate: TranslateService,
+    private globalData: GlobaldataService) {
+      
+      let lang: string;
+      globalData.lang.subscribe( val => {
+        lang = val;
+      });
+      translate.setDefaultLang(lang!);
+    }
 
   ngOnInit(): void {
     this.getWorkList();
