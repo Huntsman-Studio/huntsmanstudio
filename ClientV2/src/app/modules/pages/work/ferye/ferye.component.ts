@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
+import { GlobaldataService } from 'src/app/core/services/globaldata.service';
 
 @Component({
   selector: 'app-ferye',
@@ -12,7 +13,12 @@ export class FeryeComponent implements OnInit {
   constructor(
     private meta: Meta,
     private title: Title,
-    public translate: TranslateService) {}
+    public translate: TranslateService,
+    private globalData: GlobaldataService) {
+      let language: string;
+      globalData.lang.subscribe( val => language = val);
+      translate.setDefaultLang(language!);
+    }
 
   ngOnInit(): void {
     

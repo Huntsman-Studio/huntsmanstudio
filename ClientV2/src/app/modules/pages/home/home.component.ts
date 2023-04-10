@@ -15,8 +15,11 @@ export class HomeComponent implements OnInit {
     private title: Title, 
     public translate: TranslateService,
     private globalDataService: GlobaldataService) {
-      translate.addLangs(['en','el','tr','it']);
-      translate.setDefaultLang('el');
+      let lang: string;
+      globalDataService.lang.subscribe( val => {
+        lang = val
+      });
+      translate.setDefaultLang(lang!);
   }
 
   ngOnInit(): void { }

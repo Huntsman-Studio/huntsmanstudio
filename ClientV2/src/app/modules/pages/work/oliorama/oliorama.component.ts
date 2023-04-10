@@ -20,7 +20,7 @@ export class OlioramaComponent implements OnInit {
       globalData.lang.subscribe(val => {
         lang = val;
       })
-      translate.setDefaultLang("el");
+      translate.setDefaultLang(lang!);
     }
 
   ngOnInit(): void {

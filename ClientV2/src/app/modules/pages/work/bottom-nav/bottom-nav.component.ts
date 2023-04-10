@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { GlobaldataService } from 'src/app/core/services/globaldata.service';
 
 @Component({
   selector: 'app-bottom-nav',
@@ -8,7 +9,16 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class BottomNavComponent implements OnInit {
 
-  constructor(public translate: TranslateService) {}
+  constructor(
+    public translate: TranslateService,
+    private globalData: GlobaldataService) {
+
+      let lang: string;
+      globalData.lang.subscribe(val => {
+        lang = val;
+      });
+      translate.setDefaultLang(lang!);
+    }
 
   ngOnInit(): void {
     
